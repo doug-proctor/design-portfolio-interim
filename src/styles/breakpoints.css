@@ -1,0 +1,4 @@
+@value sm: screen and (min-width: 576px);
+@value md: screen and (min-width: 768px);
+@value lg: screen and (min-width: 992px);
+@value xl: screen and (min-width: 1200px);

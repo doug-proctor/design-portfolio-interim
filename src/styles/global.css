@@ -1,0 +1,51 @@
+body,
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'georgia';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Black';
+    margin: 0;
+}
+
+p, li {
+    line-height: 160%;
+}
+
+li {
+    margin: 0.2rem 0;
+}
+
+p, ol, ul, blockquote {
+    margin: 0 0 1.5rem 0;
+}
+
+p.secondary {
+    color: #92a2b7;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    margin: 2rem 0;
+    border-top: 1px solid #EEE;
+}
+
+figure {
+    padding: 0;
+    margin: 0 0 2rem;
+}
+
+figcaption {
+    text-align: center;
+    padding: 0.5rem 1rem 0;
+}

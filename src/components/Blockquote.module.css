@@ -1,0 +1,29 @@
+@value sm, md, lg, xl from '../styles/breakpoints.css';
+
+.blockquote {
+    color: red;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding-left: 1rem;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.blockquote:after {
+    border-radius: 3px;
+    position: absolute;
+    background: red;
+    display: block;
+    height: 100%;
+    content: "";
+    width: 8px;
+    left: 0;
+    top: 0;
+}
+
+@media sm {
+    .blockquote {
+        margin-left: -2em;
+    }
+}

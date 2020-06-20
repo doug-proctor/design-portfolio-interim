@@ -1,0 +1,37 @@
+@value sm, md, lg, xl from '../styles/breakpoints.css';
+
+.wrapper {
+    margin: 3rem 0 1.5rem;
+}
+
+.centred {
+    text-align: center;
+}
+
+.heading {
+    font-size: 30px;
+}
+
+.headingSmall {
+    font-size: 22px;
+}
+
+.super {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    color: #92a2b7;
+}
+
+@media sm {
+    .heading {
+        font-size: 36px;
+    }
+}
+
+@media sm {
+    .super {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,8 @@
+.strapline {
+    color: red;
+    font-size: 14.8vw;
+    margin: 4vw 0 10vw;
+    white-space: nowrap;
+    margin-left: 0.75rem;
+    text-shadow: 12px 12px #f1f1f1;
+}
