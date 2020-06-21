@@ -48,12 +48,14 @@
     font-size: 20px;
     color: red;
     margin: 0;
-    transition: all 0.25s linear;
+    transition: all 0.1s linear;
+    position: relative;
+    z-index: 0;
 }
 
 .link:hover {
+    transition: all 0.1s linear;
     padding-bottom: 0.3rem;
-    transition: all 0.25s linear;
     background: linear-gradient(180deg, transparent 90%, #FF0000 10%);
 }
 
