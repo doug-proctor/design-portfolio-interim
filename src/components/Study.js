@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./Study.module.css"
 
-import Main from "./main"
+import Main from "./Main"
 
 export default function Study(props) {
   return (

@@ -1,12 +1,12 @@
 import React from "react"
 import Helmet from "react-helmet"
 
-import Card from "../components/card"
+import Card from "../components/Card"
 import GridBg from "../components/GridBg"
-import Header from "../components/header"
-import Footer from "../components/footer"
-import Container from "../components/container"
-import Strapline from "../components/strapline"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+import Container from "../components/Container"
+import Strapline from "../components/Strapline"
 
 import LogoEon from "../images/studies/eon/logo-eon.png"
 import LogoIproov from "../images/studies/iproov/logo-iproov.svg"
