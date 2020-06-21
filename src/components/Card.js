@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import styles from "./Card.module.css"
 import arrow from "../images/icons/arrow.svg"
+import Img from "gatsby-image"
 
 export default function Card(props) {
   return (

@@ -1,5 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Card from "../components/Card"
 import GridBg from "../components/GridBg"
@@ -12,7 +14,19 @@ import LogoEon from "../images/studies/eon/logo-eon.png"
 import LogoIproov from "../images/studies/iproov/logo-iproov.svg"
 import LogoOneDome from "../images/studies/onedome/logo-onedome.svg"
 
-export default function Home() {
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "studies/eon/logo-eon.png" }) {
+      childImageSharp {
+        fixed(width: 125, height: 125) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
+
+export default function Home(props) {
   return (
     <>
       <Helmet>
