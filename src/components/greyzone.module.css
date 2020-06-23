@@ -3,3 +3,8 @@
     margin: 4rem 0;
     overflow:auto;
 }
+
+.zoneCompact {
+    composes: zone;
+    margin: 0;
+}

@@ -88,9 +88,12 @@ export default function Eon() {
               </p>
             </Readable>
             <GreyZone>
+              <br />
               <Heading centred super="The solution">
                 A redesigned self-service portal
               </Heading>
+              <br />
+              <br />
               <Image
                 src={solutionImage}
                 alt="Screenshots of the final mobile designs"
@@ -298,7 +301,7 @@ export default function Eon() {
                 </Col>
               </Row>
             </ImageRow>
-            <GreyZone>
+            <GreyZone compact>
               <Readable>
                 <Heading super="The results">💥 We smashed the targets</Heading>
                 <Heading sm>Calls reduced by 30%</Heading>
@@ -322,6 +325,9 @@ export default function Eon() {
                   see ever-improving CX from E.ON. You might even want to switch
                   your supply to them.
                 </p>
+                <br />
+                <br />
+                <br />
               </Readable>
             </GreyZone>
           </Study>

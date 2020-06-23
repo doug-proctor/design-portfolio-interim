@@ -78,9 +78,12 @@ export default function Eon() {
               </ul>
             </Readable>
             <GreyZone>
+              <br />
               <Heading centred super="The solution">
                 Introducing the Partner Portal
               </Heading>
+              <br />
+              <br />
               <ImageRow>
                 <Row>
                   <Col>
@@ -340,7 +343,7 @@ export default function Eon() {
                 </Col>
               </Row>
             </ImageRow>
-            <GreyZone>
+            <GreyZone compact>
               <Readable>
                 <Heading super="The results">🚀 Rapid growth</Heading>
                 <Heading sm>New powers granted</Heading>
@@ -365,6 +368,9 @@ export default function Eon() {
                   iProov is now hiring...
                 </p>
               </Readable>
+              <br />
+              <br />
+              <br />
             </GreyZone>
           </Study>
           <Footer />
