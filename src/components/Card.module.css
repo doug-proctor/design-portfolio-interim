@@ -1,7 +1,7 @@
 @value sm, md, lg, xl from '../styles/breakpoints.css';
 
 .card {
-    border: 8px solid #eeeeee;
+    border: 8px solid #f3f3f3;
     margin-bottom: 100px;
     background: #FFFFFF;
     border-radius: 10px;
@@ -43,7 +43,7 @@
 .link {
     background: linear-gradient(180deg, transparent 60%, #e9e9e9 40%);
     text-decoration: none;
-    padding: 0.2rem 0;
+    padding: 0.2rem 0.2rem 0.2rem 0;
     font-weight: 700;
     font-size: 20px;
     color: #ff6000;
@@ -51,11 +51,13 @@
     transition: all 0.1s linear;
     position: relative;
     z-index: 0;
+    border-radius: 3px;
 }
 
 .link:hover {
-    transition: all 0.1s linear;
+    border-radius: 0;
     padding-bottom: 0.3rem;
+    transition: all 0.1s linear;
     background: linear-gradient(180deg, transparent 90%, #ff6000 10%);
 }
 
@@ -63,6 +65,12 @@
     top: 5px;
     left: 3px;
     position: relative;
+    transform: translateX(0);
+    transition: all 0.1s linear;
+}
+
+.link:hover .arrow {
+    transform: translateX(5px);
 }
 
 @media sm {

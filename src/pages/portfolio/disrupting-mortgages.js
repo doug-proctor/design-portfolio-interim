@@ -472,10 +472,12 @@ export default function OneDome() {
                 the design iteration cycle:
               </p>
               <Image src={iterateImage} alt="Design iteration loop" />
+              <br />
               <p>
                 Evaluation is usually done using ordinary user testing
                 techniques, such as the Think Aloud protocol.
               </p>
+              <br />
             </Readable>
 
             {/* Sketches */}
