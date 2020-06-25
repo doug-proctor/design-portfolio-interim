@@ -7,6 +7,7 @@ import Main from "../../components/Main"
 import Study from "../../components/Study"
 import Image from "../../components/Image"
 import Header from "../../components/Header"
+import GridBg from "../../components/GridBg"
 import Footer from "../../components/Footer"
 import Heading from "../../components/Heading"
 import ImageRow from "../../components/ImageRow"
@@ -56,9 +57,9 @@ export default function OneDome() {
         <title>Doug Proctor &raquo; Lead UX & UI designer</title>
         <meta name="robots" content="noindex" />
       </Helmet>
-      <Main>
+      <GridBg>
         <Container>
-          <Header />
+          <Header compact />
           <Study title={title} intro={intro}>
             <Readable>
               <p>
@@ -570,7 +571,7 @@ export default function OneDome() {
           </Study>
           <Footer />
         </Container>
-      </Main>
+      </GridBg>
     </>
   )
 }
