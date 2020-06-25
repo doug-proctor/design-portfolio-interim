@@ -34,6 +34,10 @@ p.secondary {
     font-style: italic;
 }
 
+a, a:visited, a:hover, a:active {
+    color: #ff6000;
+}
+
 hr {
     border: none;
     margin: 2rem 0;
