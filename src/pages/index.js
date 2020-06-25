@@ -39,16 +39,16 @@ export default function Home(props) {
         </Container>
         <Strapline />
         <Container>
-          {/*<Card*/}
-          {/*  image={LogoOneDome}*/}
-          {/*  title="Disrupting mortages"*/}
-          {/*  studySlug="disrupting-mortgages"*/}
-          {/*>*/}
-          {/*  When a biometric authentication startup has spent 6 years in R&D and*/}
-          {/*  is finally ready to hit the market, a lot of things need to be in*/}
-          {/*  place. I was brought in to solve internal bottlenecks and create a*/}
-          {/*  scalable onboarding platform.*/}
-          {/*</Card>*/}
+          <Card
+            image={LogoOneDome}
+            title="Disrupting mortgages"
+            studySlug="disrupting-mortgages"
+          >
+            When a startup aims to unite all of the property-buying journeys
+            under one digital roof, they’re going to have to digitise the
+            mortgages too. I was hired to carry out the research and design for
+            the new service.
+          </Card>
           <Card
             image={LogoEon}
             title="146,000 phone calls later"

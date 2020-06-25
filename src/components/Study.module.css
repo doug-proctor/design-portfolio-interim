@@ -1,12 +1,12 @@
 @value sm, md, lg, xl from '../styles/breakpoints.css';
 
 .shadow {
-    box-shadow: 0 20px 100px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 100px rgba(0, 0, 0, 0.05);
 }
 
 .header {
     padding: 2rem;
-    background: red;
+    background: #ff6000;
 }
 
 .title {

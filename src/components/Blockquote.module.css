@@ -1,7 +1,7 @@
 @value sm, md, lg, xl from '../styles/breakpoints.css';
 
 .blockquote {
-    color: red;
+    color: #ff6000;
     font-size: 1.2em;
     line-height: 1.5em;
     padding-left: 1rem;
@@ -13,7 +13,7 @@
 .blockquote:after {
     border-radius: 3px;
     position: absolute;
-    background: red;
+    background: #ff6000;
     display: block;
     height: 100%;
     content: "";

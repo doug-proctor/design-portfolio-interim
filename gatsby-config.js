@@ -26,7 +26,7 @@ module.exports = {
         short_name: "Doug Proctor",
         start_url: "/",
         background_color: "#FFFFFF",
-        theme_color: "#00FFFF",
+        theme_color: "#FF6000",
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         // display: "standalone",
