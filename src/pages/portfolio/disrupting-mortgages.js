@@ -3,7 +3,6 @@ import Helmet from "react-helmet"
 
 import Row from "../../components/Row"
 import Col from "../../components/Col"
-import Main from "../../components/Main"
 import Study from "../../components/Study"
 import Image from "../../components/Image"
 import Header from "../../components/Header"
