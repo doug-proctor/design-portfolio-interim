@@ -27,7 +27,7 @@ export const query = graphql`
   }
 `
 
-export default function Home(props) {
+export default function SideProjects(props) {
   return (
     <>
       <Helmet>

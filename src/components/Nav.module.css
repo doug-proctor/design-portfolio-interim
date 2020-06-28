@@ -1,0 +1,36 @@
+@value sm, md, lg, xl from '../styles/breakpoints.css';
+
+.nav {
+    display: block;
+    margin: 4rem 0;
+    font-family: 'Roboto Black';
+}
+
+.ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.li {
+    padding: 0;
+    margin: 0 1rem;
+    list-style: none;
+}
+
+.link {
+    color: #c1c1c1;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.link:active { color: #c1c1c1; }
+.link:visited { color: #c1c1c1; }
+.link:hover { color: #c1c1c1; }
+
+@media sm {
+    .nav {
+        display: block;
+    }
+}

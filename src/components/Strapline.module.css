@@ -2,8 +2,8 @@
 
 .strapline {
     color: #ff6000;
-    text-align: center;
-    font-size: 14.8vw;
+    text-align: left;
+    font-size: 15vw;
     margin: 4vw 0 10vw;
     white-space: nowrap;
     margin-left: 0.75rem;
@@ -12,6 +12,7 @@
 
 @media screen and (min-width: 1300px) {
     .strapline {
+        text-align: center;
         font-size: 200px;
         margin: 50px 0 100px;
     }
