@@ -2,8 +2,22 @@ import React from "react"
 import { Link } from "gatsby"
 import styles from "./Nav.module.css"
 
-export default function Nav(props) {
-  const { pages } = props
+export default function Nav() {
+  const pages = [
+    {
+      name: "Case studies",
+      path: "/",
+    },
+    // {
+    //   name: "Samples",
+    //   path: "/samples",
+    // },
+    {
+      name: "Side projects",
+      path: "/side-projects",
+    },
+  ]
+
   return (
     <nav className={styles.nav}>
       <ul className={styles.ul}>

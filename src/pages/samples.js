@@ -40,22 +40,7 @@ export default function Samples(props) {
         </Container>
         <Strapline />
         <Container>
-          <Nav
-            pages={[
-              {
-                name: "Case studies",
-                path: "/",
-              },
-              {
-                name: "Samples",
-                path: "/samples",
-              },
-              {
-                name: "Side projects",
-                path: "/side-projects",
-              },
-            ]}
-          />
+          <Nav />
           <Card
             image={LogoOneDome}
             title="Disrupting mortgages"

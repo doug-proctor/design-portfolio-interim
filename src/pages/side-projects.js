@@ -1,33 +1,55 @@
 import React from "react"
-import Helmet from "react-helmet"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import Helmet from "react-helmet"
 
 import Nav from "../components/Nav"
-import Card from "../components/Card"
 import GridBg from "../components/GridBg"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import SmallCard from "../components/SmallCard"
 import Container from "../components/Container"
 import Strapline from "../components/Strapline"
 
-import LogoEon from "../images/studies/eon/logo-eon.png"
-import LogoIproov from "../images/studies/iproov/logo-iproov.svg"
-import LogoOneDome from "../images/studies/onedome/logo-onedome.svg"
+import kiwaLogo from "../images/side-projects/kiwa.png"
+import chefsLogo from "../images/side-projects/chefs.png"
+import exposureLogo from "../images/side-projects/exposure.png"
+import yamlBootLogo from "../images/side-projects/yaml-boot.png"
+import htmlSketchLogo from "../images/side-projects/html-sketch.png"
 
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "studies/eon/logo-eon.png" }) {
-      childImageSharp {
-        fixed(width: 125, height: 125) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`
+const cardContent = [
+  {
+    title: "Effortless SilverStripe deployments",
+    description:
+      "Provision and deploy SilverStripe applications on DigitalOcean. A lockdown project. Launching soon!",
+    image: kiwaLogo,
+  },
+  {
+    title: "Allergen data for high-end restaurants",
+    description:
+      "Working with a head chef to streamline the flow of allergen information from the suppliers to the kitchens to front of house to the customer.",
+    image: chefsLogo,
+  },
+  {
+    title: "Field exposure calculator",
+    description:
+      "Looking to sharpen your light measurement skills? I built a handy tool that lets you explore the relationship between ISO, aperature and shutter speed. Master the exposure triangle today!",
+    image: exposureLogo,
+  },
+  {
+    title: "YAML Bootstrap",
+    description:
+      "About 6 years ago I found myself churning out numerous web campaigns for Kellogg’s. They were all similar and simple, so I built this tool that allowed me and the team to describe a wireframe in YAML and have it automatically converted into a live HTML prototype. It saved us weeks of work.",
+    image: yamlBootLogo,
+  },
+  {
+    title: "HTML Sketch plugin",
+    description:
+      "Long ago in the early days of Sketch I made this plugin that allowed me to convert a set of Sketch artboards into a clickable HTML prototype that I could share with clients. ",
+    image: htmlSketchLogo,
+  },
+]
 
-export default function SideProjects(props) {
+export default function SideProjects() {
   return (
     <>
       <Helmet>
@@ -40,48 +62,12 @@ export default function SideProjects(props) {
         </Container>
         <Strapline />
         <Container>
-          <Nav
-            pages={[
-              {
-                name: "Case studies",
-                path: "/",
-              },
-              {
-                name: "Samples",
-                path: "/samples",
-              },
-              {
-                name: "Side projects",
-                path: "/side-projects",
-              },
-            ]}
-          />
-          <Card
-            image={LogoOneDome}
-            title="Disrupting mortgages"
-            studySlug="disrupting-mortgages"
-          >
-            When a startup aims to unite all of the property-buying journeys
-            under one digital roof, they’re going to have to digitise the
-            mortgages too. I was hired to carry out the research and design for
-            the new service.
-          </Card>
-          <Card
-            image={LogoEon}
-            title="146,000 phone calls later"
-            studySlug="146000-phone-calls-later"
-          >
-            When a biometric authentication startup has spent 6 years in R&D and
-            is finally ready to hit the market, a lot of things need to be in
-            place. I was brought in to solve internal bottlenecks and create a
-            scalable onboarding platform.
-          </Card>
-          <Card image={LogoIproov} title="All aboard" studySlug="all-aboard">
-            When a biometric authentication startup has spent 6 years in R&D and
-            is finally ready to hit the market, a lot of things need to be in
-            place. I was brought in to solve internal bottlenecks and create a
-            scalable onboarding platform.
-          </Card>
+          <Nav />
+          {cardContent.map(card => (
+            <SmallCard image={card.image} title={card.title}>
+              {card.description}
+            </SmallCard>
+          ))}
         </Container>
         <Footer />
       </GridBg>
